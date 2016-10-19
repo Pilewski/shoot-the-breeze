@@ -12,4 +12,11 @@ describe('Application', () => {
     assert.equal(wrapper.type(), 'div');
   });
 
+
 });
+
+//GOALZ:
+//test whether it clears input field on button click
+//check to see whether state has changed when we type into input field
+//on refresh ?
+//
