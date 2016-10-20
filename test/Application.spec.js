@@ -12,6 +12,11 @@ describe('Application', () => {
     const wrapper = shallow(<Application />)
     assert.equal(wrapper.type(), 'div');
   });
+
+  it('should have an message input field', () => {
+    const wrapper = shallow(<MessageInput />);
+    expect(wrapper.find('input')).to.have.length(1);
+  });
 });
 
 describe('MessageInput', () => {
