@@ -1,9 +1,10 @@
 import React from 'react';
 
 import { shallow, mount, render } from 'enzyme';
-import { assert } from 'chai';
+import { assert, expect } from 'chai';
 
 import Application from '../lib/components/Application';
+import MessageInput from '../lib/components/MessageInput';
 
 describe('Application', () => {
 
@@ -11,9 +12,24 @@ describe('Application', () => {
     const wrapper = shallow(<Application />)
     assert.equal(wrapper.type(), 'div');
   });
+});
+
+describe('MessageInput', () => {
+
+  it('renders as a <div>', () => {
+    const wrapper = shallow(<MessageInput />)
+    assert.equal(wrapper.type(), 'div');
+  });
+
+  it('has a getMessage prop', () => {
+    const wrapper = mount(<MessageInput/>);
+    expect(wrapper.props().getMessage).to.be.defined;
+  });
 
 
 });
+
+
 
 //GOALZ:
 //test whether it clears input field on button click
