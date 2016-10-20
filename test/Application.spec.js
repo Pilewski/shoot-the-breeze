@@ -31,7 +31,18 @@ describe('MessageInput', () => {
     expect(wrapper.props().getMessage).to.be.defined;
   });
 
+});
 
+describe('SubmitButton', () => {
+  it('Submit button component is contained in the MessageInput component', () => {
+    const wrapper = shallow(<MessageInput/>);
+    expect(wrapper.find('SubmitButton').length).to.equal(1);
+  });
+
+  it('Submit button ', () => {
+    const wrapper = mount(<Application/>);
+    expect(wrapper.state().draftMessage).to.equal('');
+  });
 });
 
 
