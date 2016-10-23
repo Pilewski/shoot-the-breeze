@@ -5,6 +5,7 @@ import { assert, expect } from 'chai';
 
 import Application from '../lib/components/Application';
 import MessageInput from '../lib/components/MessageInput';
+import Search from '../lib/components/Search';
 
 describe('Application', () => {
 
@@ -42,8 +43,6 @@ describe('MessageInput', () => {
     wrapper.setState({ message: 'testing'});
     assert.equal('Char left: '+ 133, 'Char left: '+ parseInt(140 - wrapper.state('message').length));
   });
-
-
 });
 
 describe('SubmitButton', () => {
@@ -52,15 +51,28 @@ describe('SubmitButton', () => {
     expect(wrapper.find('SubmitButton').length).to.equal(1);
   });
 
-  it('Submit button ', () => {
+  it('state of application component draftMessage is set to an empty string', () => {
     const wrapper = mount(<Application/>);
     expect(wrapper.state().draftMessage).to.equal('');
   });
 });
 
-describe('Users', () => {
+describe('Sort', () => {
+  it('Should set the state of the wrapper component of true', () => {
+    const wrapper = mount(<Search/>);
+    wrapper.state({filteredMessages: ['yolo','beans']});
+    wrapper.find('.sort-up').simulate('click');
+    expect(wrapper.state().reversed).to.equal(true);
+  })
+  it('Should set the state of the wrapper component of false', () => {
+    const wrapper = mount(<Search/>);
+    wrapper.find('.sort-up').simulate('click');
+    wrapper.find('.sort-up').simulate('click');
+    expect(wrapper.state().reversed).to.equal(false);
+  })
 
-});
+})
+
 
 
 
