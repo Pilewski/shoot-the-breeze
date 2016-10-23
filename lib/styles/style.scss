@@ -1,19 +1,17 @@
-@import: './reset'
+@import '_reset';
+@import '_variables';
 
 $wtf: blanchedalmond;
-$ridiculous: ;
 
 html {
   box-sizing: border-box;
+  font-family: $main-font;
 }
 
 body {
   background: $wtf;
 }
 
-.hello-world {
-  font-family: $ridiculous;
-}
 
 #new-message--content {
   height: 100px;
