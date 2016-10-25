@@ -5,3 +5,9 @@ header, footer {
   color: white;
   background-color: $color-header;
 }
+
+header {
+  @media-640 {
+    height: 15vh;
+  }
+}
