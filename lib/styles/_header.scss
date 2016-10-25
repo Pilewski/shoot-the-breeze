@@ -6,8 +6,18 @@ header, footer {
   background-color: $color-header;
 }
 
-header {
-  @media-640 {
-    height: 15vh;
-  }
+#inputField {
+  background-color: $color-user-input;
+  border-radius: 4px;
+  border: none;
+  font-size: 18px;
+  height: 7vh;
+  padding-left: 10px;
+}
+
+#sortSection, #footerSection {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  width: 100%;
 }
