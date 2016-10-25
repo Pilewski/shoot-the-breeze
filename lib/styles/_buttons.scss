@@ -7,3 +7,27 @@
   height: 7vh;
   width: 35%;
 }
+
+#sortUpBtn, #sortDownBtn {
+  background-color: $color-sort;
+}
+
+#LogInBtn, #LogOutBtn {
+  background-color: $color-login;
+}
+
+#SubmitBtn {
+  background-color: $color-submit;
+}
+
+#clearBtn {
+  background-color: $color-clear-btn;
+}
+
+.UserBtn, #titleButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+}
