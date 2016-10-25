@@ -1,0 +1,37 @@
+
+.messageField {
+  height: 50vh;
+  margin: 0 auto;
+  overflow-y: scroll;
+  width: 90%;
+  @media #{$breakpoint-640} {
+    display: inline-block;
+    width: 67%;
+    height: 65vh;
+    margin-left: 15px;
+  }
+}
+
+.message {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.date {
+  color: $color-date;
+}
+
+.userName {
+  color: $color-user-text;
+}
+
+aside {
+  display: none;
+  @media #{$breakpoint-640} {
+    display: inline-block;
+    background-color: $color-user-input;
+    float: right;
+    height: 65vh;
+    width: 30%;
+  }
+}
