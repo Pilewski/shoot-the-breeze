@@ -1,50 +1,38 @@
-
-.messageField {
-  height: 50vh;
-  margin: 0 auto;
-  overflow-y: scroll;
-  width: 90%;
-  @media #{$breakpoint-640} {
-    display: inline-block;
-    width: 67%;
-    height: 65vh;
-    margin-left: 15px;
-  }
-}
-
-.message {
-  font-size: 20px;
-  margin-top: 15px;
-}
-
-.date {
-  color: $color-date;
-}
-
-.userName {
-  color: $color-user-text;
+h4 {
+  color: $color-header;
   font-weight: bold;
-  margin-left: 12px;
 }
 
-aside {
-  display: none;
-  @media #{$breakpoint-640} {
-    display: inline-block;
-    background-color: $color-user-input;
-    float: right;
-    height: 65vh;
-    width: 30%;
+.MessageField {
+  margin: 55px auto 120px auto;
+  .date {
+    color: $color-date;
+    margin-left: 10px;
+  }
+  .date-mobile {
+    position: absolute;
+    visibility: hidden;
+  }
+  .userName {
+    margin: 10px;
+    color: $color-user-text;
+  }
+  .messageContent {
+    margin: 15px;
   }
 }
 
 .UserList {
-  color: $color-header;
-  h4 {
-    font-weight: bold;
-    margin: 15px;
-  }
+  background-color: $color-user-input;
+  position: fixed;
+  right: 0;
+  top: 50px;
+  padding: 20px;
+  height: 800px;
+  width: 38.2%;
   li {
-    margin: 15px;
+    margin-top: 10px;
+    color: $color-header;
+    list-style-type: none; 
   }
 }
