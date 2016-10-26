@@ -7,9 +7,9 @@ import MessageInput from '../lib/components/MessageInput';
 
 describe('MessageInput', () => {
 
-  it('renders as a <div>', () => {
+  it('renders as a <span>', () => {
     const wrapper = shallow(<MessageInput />)
-    assert.equal(wrapper.type(), 'div');
+    assert.equal(wrapper.type(), 'span');
   });
 
   it('has a getMessage prop', () => {
