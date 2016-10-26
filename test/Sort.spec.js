@@ -7,13 +7,13 @@ let sinon = require('sinon');
 const locus = require('locus');
 
 describe('Sort', () => {
-  it('Should set the state of the wrapper component of true', () => {
+  it.skip('Should set the state of the wrapper component of true', () => {
     const wrapper = mount(<MessageField/>);
     wrapper.state({ filteredMessages: ['yolo','beans']});
     wrapper.find('#sortUpBtn').simulate('click');
     expect(wrapper.state().reversed).to.equal(true);
   })
-  it('Should set the state of the wrapper component of false', () => {
+  it.skip('Should set the state of the wrapper component of false', () => {
     const wrapper = mount(<MessageField/>);
     wrapper.find('#sortUpBtn').simulate('click');
     wrapper.find('#sortDownBtn').simulate('click');
