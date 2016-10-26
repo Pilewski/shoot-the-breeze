@@ -1,0 +1,38 @@
+h4 {
+  color: $color-header;
+  font-weight: bold;
+}
+
+.MessageField {
+  margin: 55px auto 120px auto;
+  .date {
+    color: $color-date;
+    margin-left: 10px;
+  }
+  .date-mobile {
+    position: absolute;
+    visibility: hidden;
+  }
+  .userName {
+    margin: 10px;
+    color: $color-user-text;
+  }
+  .messageContent {
+    margin: 15px;
+  }
+}
+
+.UserList {
+  background-color: $color-user-input;
+  position: fixed;
+  right: 0;
+  top: 50px;
+  padding: 20px;
+  height: 800px;
+  width: 38.2%;
+  li {
+    margin-top: 10px;
+    color: $color-header;
+    list-style-type: none; 
+  }
+}

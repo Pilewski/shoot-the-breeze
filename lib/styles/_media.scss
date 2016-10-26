@@ -1,0 +1,57 @@
+@media screen and (max-width: 660px){
+
+  h1{
+    display: none;
+  }
+
+  header{
+    height: 105px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  footer {
+    height: 105px;
+  }
+
+  .UserList {
+    display: none;
+  }
+
+  #sortUpBtn, #sortDownBtn {
+    margin-top: 2px;
+    float: none;
+  }
+
+  #sortContainer {
+    display: block;
+  }
+
+  .UserOnline {
+    display: none;
+  }
+
+  .MessageField {
+    margin: 160px auto 120px auto;
+  }
+
+  .MessageField span.date {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .MessageField span.date-mobile {
+    position: relative;
+    visibility: visible;
+    color: $color-date;
+  }
+
+  .MessageInput {
+    text-align: center;
+    display: block;
+  }
+  #SubmitBtn, #clearBtn {
+    text-align: center;
+  }
+
+}

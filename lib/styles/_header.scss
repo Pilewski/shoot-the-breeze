@@ -1,0 +1,57 @@
+input,  {
+  color: $color-user-text;
+  margin: 12px;
+  font-size: 16px;
+  display: inline-block;
+  padding: 5px;
+  background-color: $color-user-input;
+  border-style: none;
+  border-radius: 4px;
+}
+
+header, footer {
+  background-color: $color-header;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  height: 115px;
+  bottom: 0;
+}
+
+.UserOnline {
+  color: white;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: $color-login;
+  height: 50px;
+  width: 100%;
+}
+
+.MessageInput {
+  display: flex;
+  align-items: center;
+  #inputMessage {
+    height: 30px;
+    width: 60%;
+  }
+  #charCounter {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+  }
+  #SubmitBtn {
+    background-color: $color-submit;
+  }
+  #clearBtn {
+    background-color: $color-clear-btn;
+    margin-right: 10px;
+  }
+}
