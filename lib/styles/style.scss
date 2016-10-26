@@ -3,13 +3,9 @@
 @import '_buttons';
 @import '_header';
 @import '_messages';
-
-html {
-  box-sizing: border-box;
-  font-family: $main-font;
-}
+@import '_media';
 
 body {
   height: 100%;
-  position: relative;
+  font-family: $main-font;
 }
