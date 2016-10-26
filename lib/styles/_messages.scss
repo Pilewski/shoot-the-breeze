@@ -23,6 +23,8 @@
 
 .userName {
   color: $color-user-text;
+  font-weight: bold;
+  margin-left: 12px;
 }
 
 aside {
@@ -33,5 +35,16 @@ aside {
     float: right;
     height: 65vh;
     width: 30%;
+  }
+}
+
+.UserList {
+  color: $color-header;
+  h4 {
+    font-weight: bold;
+    margin: 15px;
+  }
+  li {
+    margin: 15px;
   }
 }
