@@ -1,7 +1,8 @@
 @import '_reset';
 @import '_variables';
-
-$wtf: blanchedalmond;
+@import '_buttons';
+@import '_header';
+@import '_messages';
 
 html {
   box-sizing: border-box;
@@ -9,11 +10,6 @@ html {
 }
 
 body {
-  background: $wtf;
-}
-
-
-#new-message--content {
-  height: 100px;
-  border: 1px dotted aliceblue;
+  height: 100%;
+  position: relative;
 }
