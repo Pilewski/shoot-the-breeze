@@ -37,6 +37,9 @@
   &:hover {
     cursor: pointer;
   }
+  &:disabled {
+    cursor:not-allowed;
+  }
 }
 
 #sortUpBtn, #sortDownBtn {
@@ -47,4 +50,9 @@
 
 #LogInBtn {
   color: $color-login;
+}
+
+#LogOutBtn {
+  color: $color-clear-btn;
+  float: right;
 }
