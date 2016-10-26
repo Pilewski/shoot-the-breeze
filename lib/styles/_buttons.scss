@@ -37,6 +37,9 @@
   &:hover {
     cursor: pointer;
   }
+  &:disabled {
+    cursor:not-allowed;
+  }
 }
 
 #sortUpBtn, #sortDownBtn {
